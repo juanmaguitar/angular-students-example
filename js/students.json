@@ -1,0 +1,8 @@
+{
+	"firstName":"Rich",
+	"lastName":"Richie",
+	"fees":500,
+	"subjects":[
+		{ "name": "Physics","marks": 70 }
+	],
+}
