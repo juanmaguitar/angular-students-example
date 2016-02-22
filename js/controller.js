@@ -1,6 +1,6 @@
 angular
-	.module('collegeControllers')
-	.controller('RemoteStudentController', function($scope, RemoteStudentService ) {
+	.module('collegeControllers',[])
+	.controller('RemoteStudentController', function( $scope, RemoteStudentService ) {
 
 		$scope.student = {};
 
@@ -18,10 +18,11 @@ angular
 		}
 
 		$scope.showResults = function(){
-			return ($scope.results ? $scope.results=false : $scope.results=true)
+			return ($scope.results ? $scope.results = false : $scope.results = true)
 		}
 		$scope.aGradeFilter = function (subject) {
 			return (subject.marks > 74);
 		}
+
 
 	});
